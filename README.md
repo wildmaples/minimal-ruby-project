@@ -7,6 +7,7 @@ A template for your Ruby project!
 * Basic project structure 
 * Rakefile and test helper to run tests
 * Github Action workflow 
+* Gitlab CI
 
 # Set up
 

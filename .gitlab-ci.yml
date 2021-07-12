@@ -1,0 +1,13 @@
+image: ruby:3.0-slim
+
+cache:
+  paths:
+    - vendor/ruby
+
+before_script:
+  - ruby -v
+  - bundle install -j $(nproc) --path vendor
+
+test:
+  script:
+    - bundle exec rake test
