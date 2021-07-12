@@ -1,0 +1,7 @@
+services:
+  test:
+    build:
+      context: .
+      target: test
+    volumes:
+      - .:/opt/app
