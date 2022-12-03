@@ -1,0 +1,16 @@
+# This template is inspired on https://gist.githubusercontent.com/lazaronixon/7815d84702f277ead5e89c9f2aa5581f/raw/rubocop.yml
+
+require:
+  - rubocop-performance
+  - rubocop-minitest
+
+AllCops:
+  TargetRubyVersion: 3.1
+  # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
+  # to ignore them, so only the ones explicitly set in this file are enabled.
+  DisabledByDefault: true
+  SuggestExtensions: false
+
+Performance:
+  Exclude:
+    - 'test/**/*'
